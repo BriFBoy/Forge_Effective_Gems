@@ -1,7 +1,11 @@
-package net.brifboy.examplemod;
+package net.brifboy.effectivegems;
 
 import com.mojang.logging.LogUtils;
+import net.brifboy.effectivegems.Item.ModCreativeModeTabs;
+import net.brifboy.effectivegems.Item.ModItems;
 import net.minecraft.client.Minecraft;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -29,6 +33,8 @@ public class EffectiveGems
 
     public EffectiveGems() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        ModCreativeModeTabs.register(modEventBus);
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -57,7 +63,9 @@ public class EffectiveGems
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.GREEN_GEM);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

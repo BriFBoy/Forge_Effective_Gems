@@ -1,4 +1,4 @@
-package net.brifboy.examplemod;
+package net.brifboy.effectivegems;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
