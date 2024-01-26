@@ -6,6 +6,11 @@
   "block.effectivegems.green_gem_block": "Green Gem Block",
   "block.effectivegems.blue_gem_block": "Blue Gem Block",
   "block.effectivegems.black_gem_block": "Black Gem Block",
+  "block.effectivegems.green_gem_ore": "Green Gem Ore",
+  "block.effectivegems.deepslate_green_gem_ore": "Deepslate Green Gem Ore",
+  "block.effectivegems.blue_gem_ore": "Blue Gem Ore",
+  "block.effectivegems.deepslate_blue_gem_ore": "Deepslate Blue Gem Ore",
+  "block.effectivegems.nether_black_gem_ore": "Nether Black Gem Ore",
 
   "creativetab.effectivegems": "Effective Gems"
 }

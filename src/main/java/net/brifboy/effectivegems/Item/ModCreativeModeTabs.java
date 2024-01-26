@@ -25,6 +25,12 @@ public class ModCreativeModeTabs {
                         pOutput.accept(Modblocks.BLUE_GEM_BLOCK.get());
                         pOutput.accept(Modblocks.BLACK_GEM_BLOCK.get());
 
+                        pOutput.accept(Modblocks.GREEN_GEM_ORE.get());
+                        pOutput.accept(Modblocks.DEEPSLATE_GREEN_GEM_ORE.get());
+                        pOutput.accept(Modblocks.BLUE_GEM_ORE.get());
+                        pOutput.accept(Modblocks.DEEPSLATE_BLUE_GEM_ORE.get());
+                        pOutput.accept(Modblocks.NETHER_BLACK_GEM_ORE.get());
+
                     }).build());
 
     public static void register(IEventBus eventBus) {

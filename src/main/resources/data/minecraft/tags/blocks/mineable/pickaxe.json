@@ -1,0 +1,12 @@
+{
+  "values": [
+    "effectivegems:green_gem_block",
+    "effectivegems:blue_gem_block",
+    "effectivegems:black_gem_block",
+    "effectivegems:green_gem_ore",
+    "effectivegems:deepslate_green_gem_ore",
+    "effectivegems:blue_gem_ore",
+    "effectivegems:deepslate_blue_gem_ore",
+    "effectivegems:nether_black_gem_ore"
+  ]
+}
