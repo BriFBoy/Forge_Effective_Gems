@@ -3,5 +3,9 @@
   "item.effectivegems.blue_gem": "Blue Gem",
   "item.effectivegems.black_gem": "Black Gem",
 
+  "block.effectivegems.green_gem_block": "Green Gem Block",
+  "block.effectivegems.blue_gem_block": "Blue Gem Block",
+  "block.effectivegems.black_gem_block": "Black Gem Block",
+
   "creativetab.effectivegems": "Effective Gems"
 }

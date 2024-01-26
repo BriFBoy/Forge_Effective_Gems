@@ -1,5 +1,6 @@
 package net.brifboy.effectivegems.Item;
 
+import net.brifboy.effectivegems.Blocks.Modblocks;
 import net.brifboy.effectivegems.EffectiveGems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -19,6 +20,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.GREEN_GEM.get());
                         pOutput.accept(ModItems.BLUE_GEM.get());
                         pOutput.accept(ModItems.BLACK_GEM.get());
+
+                        pOutput.accept(Modblocks.GREEN_GEM_BLOCK.get());
+                        pOutput.accept(Modblocks.BLUE_GEM_BLOCK.get());
+                        pOutput.accept(Modblocks.BLACK_GEM_BLOCK.get());
+
                     }).build());
 
     public static void register(IEventBus eventBus) {

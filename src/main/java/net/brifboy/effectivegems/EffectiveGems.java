@@ -1,6 +1,7 @@
 package net.brifboy.effectivegems;
 
 import com.mojang.logging.LogUtils;
+import net.brifboy.effectivegems.Blocks.Modblocks;
 import net.brifboy.effectivegems.Item.ModCreativeModeTabs;
 import net.brifboy.effectivegems.Item.ModItems;
 import net.minecraft.client.Minecraft;
@@ -35,6 +36,7 @@ public class EffectiveGems
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
+        Modblocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
