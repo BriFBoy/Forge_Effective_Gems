@@ -1,5 +1,8 @@
 package net.brifboy.effectivegems.Blocks;
 
+import net.brifboy.effectivegems.Blocks.custom.BlackGemBlock;
+import net.brifboy.effectivegems.Blocks.custom.BlueGemBlock;
+import net.brifboy.effectivegems.Blocks.custom.GreenGemBlock;
 import net.brifboy.effectivegems.EffectiveGems;
 import net.brifboy.effectivegems.Item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -20,11 +23,12 @@ public class Modblocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, EffectiveGems.MOD_ID);
 
     public static final RegistryObject<Block> GREEN_GEM_BLOCK = registerBlock("green_gem_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+            () -> new GreenGemBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
     public static final RegistryObject<Block> BLUE_GEM_BLOCK = registerBlock("blue_gem_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)));
+            () -> new BlueGemBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)));
     public static final RegistryObject<Block> BLACK_GEM_BLOCK = registerBlock("black_gem_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK)));
+            () -> new BlackGemBlock(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK)));
+
     public static final RegistryObject<Block> GREEN_GEM_ORE = registerBlock("green_gem_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)
                     .requiresCorrectToolForDrops(), UniformInt.of(2, 3)));
